@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ChatRoom</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/public/chat.jpg"/>
+</head>
+
+<body>
+    <div id="login" class="login">
+        <h1>Login</h1>
+        <div>
+            <input id="id" placeholder="用户名" class="log_input"></input>
+            <input id="passwd" placeholder="密码" class="log_input" type="password"></input>
+            <button id="logbtn" class="logbut">登录</button>
+        </div>
+    </div>
+    <div id="chatroom" class="chatroom">
+        <div class="contact">
+            <h3 id="title" align="center">chatRoom</h1>
+            <ul id="side">
+                <li id="Group" class="active">Group</li>
+                <li id="MBG">马保国</li>
+                <li id="LX">罗翔</li>
+                <li id="JG">杰哥</li>
+                <li id="DSM">大司马</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div id="header" class="header">Group</div>
+            <div id="MSG" class="MSG">
+                <div id="msg_group"></div>
+                <div id="msg_mbg" style="display: none;"></div>
+                <div id="msg_lx" style="display: none;"></div>
+                <div id="msg_jg" style="display: none;"></div>
+                <div id="msg_dsm" style="display: none;"></div>
+            </div>
+            <div class="footer">
+                <input id="input" class="input" placeholder="输入消息">
+                <button id="sendbtn" class="button">发送</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="chat.js"></script>
+    
+</body>
+
+</html>
