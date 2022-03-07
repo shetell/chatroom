@@ -1,7 +1,7 @@
 # chatroom
 A multiuser online chat tool
 Open this folder in your terminal, use 'nodejs server.js' command to start the server and use localhost to access.
-There are 4 accounts provided: 
+There are 4 accounts provided:     
 1.ID: MBG   Password: 111    
 2.ID: LX    Password: 222    
 3.ID: JG    Password: 333    
